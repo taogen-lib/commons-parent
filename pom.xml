@@ -46,6 +46,7 @@
 		<!-- 2. plugins -->
 		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
 		<maven-surefire-plugin.version>2.22.0</maven-surefire-plugin.version>
+		<maven-failsafe-plugin.version>2.22.0</maven-failsafe-plugin.version>
 	</properties>
 
 	<dependencies>
@@ -221,6 +222,11 @@
 					<artifactId>maven-surefire-plugin</artifactId>
 					<!-- JUnit 5 requires Surefire version 2.22.0 or higher -->
 					<version>${maven-surefire-plugin.version}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-failsafe-plugin</artifactId>
+					<version>${maven-failsafe-plugin.version}</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
