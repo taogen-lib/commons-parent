@@ -31,8 +31,8 @@
 		<mysql.version>8.0.29</mysql.version>
 		<mybatis.version>3.5.10</mybatis.version>
 		<mybatis-plus.version>3.5.2</mybatis-plus.version>
-		<elasticsearch-java.version>7.17.4</elasticsearch-java.version>
-		<elasticsearch-rest.version>7.15.2</elasticsearch-rest.version>
+		<elasticsearch-java.version>8.3.2</elasticsearch-java.version>
+		<elasticsearch-rest.version>8.3.2</elasticsearch-rest.version>
 		<!-- others -->
 		<guava.version>31.1-jre</guava.version>
 		<okhttp.version>4.9.3</okhttp.version>
