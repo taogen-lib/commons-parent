@@ -35,6 +35,7 @@
 		<elasticsearch-java.version>8.3.2</elasticsearch-java.version>
 		<elasticsearch-rest.version>8.3.2</elasticsearch-rest.version>
 		<!-- others -->
+		<taogen.commons-java>-SNAPSHOT</taogen.commons-java>
 		<guava.version>31.1-jre</guava.version>
 		<okhttp.version>4.9.3</okhttp.version>
 		<okhttp.mockwebserver.version>4.9.0</okhttp.mockwebserver.version>
@@ -117,7 +118,7 @@
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
 				<version>${slf4j.version}</version>
-<!--				<scope>test</scope>-->
+				<!--				<scope>test</scope>-->
 			</dependency>
 			<dependency>
 				<groupId>org.projectlombok</groupId>
@@ -166,6 +167,11 @@
 				<version>${elasticsearch-rest.version}</version>
 			</dependency>
 			<!-- others -->
+			<dependency>
+				<groupId>com.github.taogen-lib</groupId>
+				<artifactId>commons-java</artifactId>
+				<version>${taogen.commons-java}</version>
+			</dependency>
 			<dependency>
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
@@ -225,10 +231,10 @@
 	</dependencyManagement>
 
 	<repositories>
-		<!--		<repository>-->
-		<!--			<id>jitpack.io</id>-->
-		<!--			<url>https://jitpack.io</url>-->
-		<!--		</repository>-->
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
+		</repository>
 		<repository>
 			<snapshots>
 				<enabled>false</enabled>
