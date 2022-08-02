@@ -32,10 +32,15 @@
 		<!-- data access -->
 		<jedis.version>4.2.3</jedis.version>
 		<mysql.version>8.0.30</mysql.version>
+		<h2.version>2.1.214</h2.version>
 		<mybatis.version>3.5.10</mybatis.version>
 		<mybatis-plus.version>3.5.2</mybatis-plus.version>
+		<mybatis-plus-generator.version>3.5.3</mybatis-plus-generator.version>
 		<elasticsearch-java.version>8.3.2</elasticsearch-java.version>
 		<elasticsearch-rest.version>8.3.2</elasticsearch-rest.version>
+		<!-- template -->
+		<velocity.version>2.3</velocity.version>
+		<freemarker.version>2.3.31</freemarker.version>
 		<!-- others -->
 		<taogen.commons-java>-SNAPSHOT</taogen.commons-java>
 		<guava.version>31.1-jre</guava.version>
@@ -163,6 +168,12 @@
 				<version>${mysql.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.h2database</groupId>
+				<artifactId>h2</artifactId>
+				<version>${h2.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
 				<groupId>org.mybatis</groupId>
 				<artifactId>mybatis</artifactId>
 				<version>${mybatis.version}</version>
@@ -172,6 +183,12 @@
 				<artifactId>mybatis-plus</artifactId>
 				<version>${mybatis-plus.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>com.baomidou</groupId>
+				<artifactId>mybatis-plus-generator</artifactId>
+				<version>${mybatis-plus-generator.version}</version>
+			</dependency>
+
 			<!-- search engine -->
 			<dependency>
 				<groupId>co.elastic.clients</groupId>
@@ -183,6 +200,18 @@
 				<artifactId>elasticsearch-rest-client</artifactId>
 				<version>${elasticsearch-rest.version}</version>
 			</dependency>
+			<!-- template -->
+			<dependency>
+				<groupId>org.apache.velocity</groupId>
+				<artifactId>velocity-engine-core</artifactId>
+				<version>${velocity.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.freemarker</groupId>
+				<artifactId>freemarker</artifactId>
+				<version>${freemarker.version}</version>
+			</dependency>
+
 			<!-- others -->
 			<dependency>
 				<groupId>com.github.taogen-lib</groupId>
