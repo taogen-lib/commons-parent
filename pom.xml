@@ -369,6 +369,7 @@
 					<!-- JUnit 5 requires Surefire version 2.22.0 or higher -->
 					<version>${maven-surefire-plugin.version}</version>
 				</plugin>
+				<!-- The Failsafe Plugin is designed to run integration tests while the Surefire Plugin is designed to run unit tests. -->
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-failsafe-plugin</artifactId>
