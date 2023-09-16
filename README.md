@@ -21,6 +21,14 @@ Add the [JitPack](https://jitpack.io/#taogen-lib/commons-parent) repository to y
 </repositories>
 ```
 
+## Check for updated dependencies in repository
+
+```shell
+mvn versions:display-dependency-updates
+```
+
+Don't use alpha versions
+
 References
 
 - [spring-boot-dependencies-2.1.4.RELEASE.pom](https://github.com/mahendra-shinde/maven-repo-springboot/blob/master/repository/org/springframework/boot/spring-boot-dependencies/2.1.4.RELEASE/spring-boot-dependencies-2.1.4.RELEASE.pom)
