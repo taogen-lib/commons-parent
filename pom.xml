@@ -30,6 +30,7 @@
 		<logback.version>1.5.18</logback.version>
 		<slf4j.version>2.0.9</slf4j.version>
 		<lombok.version>1.18.38</lombok.version>
+		<dotenv-java.version>3.2.0</dotenv-java.version>
 		<jetbrains-annotation.version>26.0.2</jetbrains-annotation.version>
 		<!-- data access -->
 		<jedis.version>5.2.0</jedis.version>
@@ -194,6 +195,11 @@
 				<artifactId>lombok</artifactId>
 				<version>${lombok.version}</version>
 				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>io.github.cdimascio</groupId>
+				<artifactId>dotenv-java</artifactId>
+				<version>${dotenv-java.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jetbrains</groupId>
